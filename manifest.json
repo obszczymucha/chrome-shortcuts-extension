@@ -1,0 +1,47 @@
+{
+  "background": {
+    "service_worker": "background.js"
+  },
+  "commands": {
+    "switch-to-tab-1": {
+      "description": "Switch to tab 1",
+      "global": true
+    },
+    "switch-to-tab-2": {
+      "description": "Switch to tab 2",
+      "global": true
+    },
+    "switch-to-tab-3": {
+      "description": "Switch to tab 3",
+      "global": true
+    },
+    "switch-to-tab-4": {
+      "description": "Switch to tab 4",
+      "global": true
+    },
+    "switch-to-tab-5": {
+      "description": "Switch to tab 5",
+      "global": true
+    },
+    "switch-to-tab-6": {
+      "description": "Switch to tab 6",
+      "global": true
+    },
+    "switch-to-tab-7": {
+      "description": "Switch to tab 7",
+      "global": true
+    },
+    "switch-to-tab-8": {
+      "description": "Switch to tab 8",
+      "global": true
+    },
+    "switch-to-tab-9": {
+      "description": "Switch to tab 9",
+      "global": true
+    }
+  },
+  "description": "Customizes shortcuts.",
+  "manifest_version": 2,
+  "name": "Custom Shortcuts",
+  "version": "1.0"
+}
