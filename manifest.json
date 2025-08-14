@@ -38,6 +38,14 @@
     "switch-to-tab-9": {
       "description": "Switch to tab 9",
       "global": true
+    },
+    "close-tab": {
+      "description": "Close current tab",
+      "global": true
+    },
+    "new-tab": {
+      "description": "Open new tab",
+      "global": true
     }
   },
   "description": "Customizes shortcuts.",

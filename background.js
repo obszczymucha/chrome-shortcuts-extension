@@ -27,6 +27,12 @@ chrome.commands.onCommand.addListener((command) => {
     case 'switch-to-tab-9':
       activate_tab(8);
       break;
+    case 'close-tab':
+      close_current_tab();
+      break;
+    case 'new-tab':
+      open_new_tab();
+      break;
     default:
       return;
   }
@@ -40,4 +46,16 @@ function activate_tab(index) {
 
     chrome.tabs.update(tabs[0].id, { active: true });
   });
+}
+
+function close_current_tab() {
+  chrome.tabs.query({ active: true, currentWindow: true }, function(tabs) {
+    if (tabs[0]) {
+      chrome.tabs.remove(tabs[0].id);
+    }
+  });
+}
+
+function open_new_tab() {
+  chrome.tabs.create({});
 }
